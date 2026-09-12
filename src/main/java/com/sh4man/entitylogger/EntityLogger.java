@@ -20,7 +20,7 @@ public class EntityLogger
     public static final String NAME = "Entity Logger";
     public static final String VERSION = "1.0";
 
-    private int tickCounter = 0;
+    Window window = new Window();
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -36,12 +36,6 @@ public class EntityLogger
             return;
         }
 
-        tickCounter++;
-        if (tickCounter != 20) {
-            return;
-        }
-        tickCounter = 0;
-
         List<Entity> loadedEntityList = mc.world.getLoadedEntityList();
 
         for (Entity entity : loadedEntityList) {
@@ -52,7 +46,9 @@ public class EntityLogger
                     continue;
                 }
 
-                System.out.printf("%s (%d) x=%.0f y=%.0f z=%.0f%n", name, entity.getEntityId(), entity.posX, entity.posY, entity.posZ);
+                String message = String.format("%s (%d) x=%.0f y=%.0f z=%.0f%n", name, entity.getEntityId(), entity.posX, entity.posY, entity.posZ);
+
+                window.log(message);
             }
         }
 
