@@ -1,3 +1,15 @@
+# Entity Logger
+
+# What is it?
+
+This is a simple Minecraft mod that displays your coordinates and block coordinates in a separate window when playing Hide and Seek. Tested on the TeslaCraft server.
+
+# Quick Start
+
+1. Download and install Minecraft Forge 1.12.2
+2. Download the .jar file from the GitHub Releases
+3. Move the downloaded file into your mods folder alongside your other mods
+
 # Source installation information for modders
 
 This code follows the Minecraft Forge installation methodology. It will apply some small patches to the vanilla MCP source code, giving you and it access to some of the data and functions you need to build a successful mod.
