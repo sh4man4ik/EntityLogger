@@ -1,5 +1,7 @@
 # Entity Logger
 
+<video src="https://github.com/user-attachments/assets/20b55f4c-1615-49af-954a-2fe7f165eba5"></video>
+
 # What is it?
 
 This is a simple Minecraft mod that displays your coordinates and block coordinates in a separate window when playing Hide and Seek. Tested on the TeslaCraft server.
