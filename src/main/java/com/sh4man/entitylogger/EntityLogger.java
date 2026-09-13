@@ -38,6 +38,8 @@ public class EntityLogger
 
         List<Entity> loadedEntityList = mc.world.getLoadedEntityList();
 
+        StringBuilder entities = new StringBuilder();
+
         for (Entity entity : loadedEntityList) {
             if (entity instanceof EntityFallingBlock || entity instanceof EntityPlayerSP) {
                 String name = entity.getName();
@@ -48,10 +50,12 @@ public class EntityLogger
 
                 String message = String.format("%s (%d) x=%.0f y=%.0f z=%.0f%n", name, entity.getEntityId(), entity.posX, entity.posY, entity.posZ);
 
-                window.log(message);
+                entities.append(message);
             }
         }
 
-        System.out.println();
+        if (entities.length() > 0) {
+            window.log(entities.toString());
+        }
     }
 }
