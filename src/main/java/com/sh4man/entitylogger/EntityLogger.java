@@ -42,6 +42,8 @@ public class EntityLogger
 
         for (Entity entity : loadedEntityList) {
             if (entity instanceof EntityFallingBlock || entity instanceof EntityPlayerSP) {
+                entity.setGlowing(true);
+
                 String name = entity.getName();
 
                 if (name.trim().isEmpty()) {
