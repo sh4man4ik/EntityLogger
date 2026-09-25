@@ -1,4 +1,4 @@
-# Entity Logger
+# EntityLogger
 
 <video src="https://github.com/user-attachments/assets/20b55f4c-1615-49af-954a-2fe7f165eba5"></video>
 
