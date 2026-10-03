@@ -1,7 +1,7 @@
 [
 {
   "modid": "entitylogger",
-  "name": "Entity Logger",
+  "name": "EntityLogger",
   "description": "Minecraft cheat for entity logging",
   "version": "1.0",
   "authorList": ["sh4man"]
