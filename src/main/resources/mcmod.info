@@ -3,7 +3,7 @@
   "modid": "entitylogger",
   "name": "EntityLogger",
   "description": "Minecraft cheat for entity logging",
-  "version": "1.0",
+  "version": "2.0",
   "authorList": ["sh4man"]
 }
 ]
