@@ -4,7 +4,7 @@
 
 # What is it?
 
-This is a simple Minecraft cheat that applies a **glowing effect** to the blocks while playing Hide and Seek. Tested on the TeslaCraft server.
+This is a simple Minecraft cheat that applies a **glowing effect** to the blocks while playing Hide and Seek. Tested on the TeslaCraft server. You can configure the enable/disable key in the game settings.
 
 # Quick Start
 
