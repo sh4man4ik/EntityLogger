@@ -1,7 +1,6 @@
 package com.sh4man.entitylogger;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityFallingBlock;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,7 +22,9 @@ public class EntityLogger
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        ModControl.register();
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new ModControl());
     }
 
     @SubscribeEvent
@@ -35,6 +36,17 @@ public class EntityLogger
         }
 
         List<Entity> loadedEntityList = mc.world.getLoadedEntityList();
+
+        if (!ModControl.enabled)
+        {
+            for (Entity entity : loadedEntityList) {
+                if (entity instanceof EntityFallingBlock && entity.isGlowing()) {
+                    entity.setGlowing(false);
+                }
+            }
+
+            return;
+        }
 
         for (Entity entity : loadedEntityList) {
             if (entity instanceof EntityFallingBlock) {
