@@ -20,8 +20,6 @@ public class EntityLogger
     public static final String NAME = "Entity Logger";
     public static final String VERSION = "1.0";
 
-    Window window = new Window();
-
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
@@ -38,26 +36,10 @@ public class EntityLogger
 
         List<Entity> loadedEntityList = mc.world.getLoadedEntityList();
 
-        StringBuilder entities = new StringBuilder();
-
         for (Entity entity : loadedEntityList) {
-            if (entity instanceof EntityFallingBlock || entity instanceof EntityPlayerSP) {
+            if (entity instanceof EntityFallingBlock) {
                 entity.setGlowing(true);
-
-                String name = entity.getName();
-
-                if (name.trim().isEmpty()) {
-                    continue;
-                }
-
-                String message = String.format("%s (%d) x=%.0f y=%.0f z=%.0f%n", name, entity.getEntityId(), entity.posX, entity.posY, entity.posZ);
-
-                entities.append(message);
             }
-        }
-
-        if (entities.length() > 0) {
-            window.log(entities.toString());
         }
     }
 }
