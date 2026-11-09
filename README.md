@@ -1,6 +1,6 @@
 # EntityLogger
 
-<video src="https://github.com/user-attachments/assets/cd7f34e5-ae86-4eb4-8632-5ac3fda3cfd4"></video>
+<video src="https://github.com/user-attachments/assets/c1a3bee5-00e0-478d-b48b-7293e79018e3"></video>
 
 # What is it?
 
