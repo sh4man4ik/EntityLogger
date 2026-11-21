@@ -11,3 +11,9 @@ This is a simple Minecraft cheat that applies a **glowing effect** to the blocks
 1. Download and install *Minecraft Forge 1.12.2*
 2. Download the *.jar* file from the GitHub Releases
 3. Move the downloaded file into your *mods* folder alongside your other mods
+
+# Source Code
+
+To run the code in a development environment, the following was used:
+
+- Java 8 (Eclipse Temurin 8)
